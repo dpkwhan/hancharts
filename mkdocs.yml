@@ -1,0 +1,55 @@
+copyright: "Copyright &copy; 2020 David Han. A written permission is required for reproduction."
+dev_addr: "0.0.0.0:9000"
+docs_dir: "docs"
+extra:
+  version: 1.0
+
+extra_javascript:
+  - "https://cdn.jsdelivr.net/npm/echarts@5.0.1/dist/echarts.min.js"
+  - assets/js/strategy_usage.js
+
+google_analytics:
+  - "UA-140259656-1"
+  - "auto"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dpkwhan/hancharts
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/zhaohuihan/
+    
+markdown_extensions:
+  - meta
+  - admonition
+  - extra
+  - footnotes
+  - pymdownx.arithmatex
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      linenums: false
+  - markdown_include.include:
+
+site_dir: "site"
+site_author: "David Han"
+site_description: "ECharts"
+site_name: "Chart Collection"
+site_url: "https://dpkwhan.github.io/hancharts/"
+use_directory_urls: true
+
+theme:
+  favicon: "assets/img/favicon.png"
+  feature:
+    tabs: true
+  name: "material"
+  logo: "assets/img/logo.png"
+  palette:
+    primary: "blue"
+    accent: "deep orange"
+    
+nav:
+  - Home: index.md
+  - Pie:
+    - Strategy Usage: pie/strategy_usage.md

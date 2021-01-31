@@ -1,2 +1,2 @@
-# hancharts
-Collection of ECharts Examples
+# Collection of ECharts
+
