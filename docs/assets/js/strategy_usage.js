@@ -1,13 +1,10 @@
-const dom = document.getElementById("orders-by-strategy");
-const chart = echarts.init(dom);
-
 const scale = 1;
 const echartData = [
-{ value: 18546, name: 'VWAP'}, 
-{ value: 15157, name: 'Liquidity Seeking'}, 
-{ value: 12543, name: 'POV'}, 
-{ value: 9515, name: 'TWAP'}, 
-{ value: 7154, name: 'Adaptive Close'}, 
+    { value: 18546, name: 'VWAP'}, 
+    { value: 15157, name: 'Liquidity Seeking'}, 
+    { value: 12543, name: 'POV'}, 
+    { value: 9515, name: 'TWAP'}, 
+    { value: 7154, name: 'Adaptive Close'}, 
 ];
 
 const rich = {
@@ -41,7 +38,7 @@ const rich = {
     },
 };
 
-const option = {
+option = {
     backgroundColor: '#031f2d',
     title: {
         text: 'Total Orders',
@@ -108,10 +105,6 @@ const option = {
     }],
 };
 
-if (option && typeof option === 'object') {
-    chart.setOption(option);
-}
-
-window.onresize = function() {
-    myChart.resize();
-};
+dom = document.getElementById("orders-by-strategy");
+chart = echarts.init(dom);
+chart.setOption(option);

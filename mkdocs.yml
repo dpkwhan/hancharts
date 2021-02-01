@@ -6,7 +6,9 @@ extra:
 
 extra_javascript:
   - "https://cdn.jsdelivr.net/npm/echarts@5.0.1/dist/echarts.min.js"
+  - assets/js/init.js
   - assets/js/strategy_usage.js
+  - assets/js/slippage_vs_momentum.js
 
 google_analytics:
   - "UA-140259656-1"
@@ -51,5 +53,5 @@ theme:
     
 nav:
   - Home: index.md
-  - Pie:
-    - Strategy Usage: pie/strategy_usage.md
+  - Strategy Usage: strategy_usage.md
+  - Slippage vs Momentum: slippage_vs_momentum.md
